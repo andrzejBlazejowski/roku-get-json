@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "brightscript",
+            "request": "launch",
+            "name": "src",
+            "stopOnEntry": false,
+            "host": "192.168.1.7",
+            "password": "abdev",
+            "rootDir": "${workspaceFolder}/src/",
+            "enableDebuggerAutoRecovery": false,
+            "stopDebuggerOnAppExit": false
+        }, {
+            "type": "brightscript",
+            "request": "launch",
+            "name": "testChannel",
+            "stopOnEntry": false,
+            "host": "192.168.1.7",
+            "password": "abdev",
+            "rootDir": "${workspaceFolder}/testChannel/",
+            "enableDebuggerAutoRecovery": false,
+            "stopDebuggerOnAppExit": false
+        }
+    ]
+}
