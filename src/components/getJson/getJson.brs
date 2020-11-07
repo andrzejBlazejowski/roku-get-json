@@ -7,7 +7,7 @@ function getContent()
     parseInitialParams()
     valid = validateInitialParams()
 
-    if valid 
+    if valid
         getJson()
     end if
 end function
@@ -36,11 +36,11 @@ function parseInitialParams()
         end if
         config.certificate = certificate
 
-        headers = config.headers
-        if Type(headers) <> "roAssociativeArray"
-            headers = Invvalid
+        httpHeaders = config.httpHeaders
+        if Type(httpHeaders) <> "roAssociativeArray"
+            httpHeaders = Invalid
         end if
-        config.headers = headers
+        config.httpHeaders = httpHeaders
     end if
 
     m.top.config = config
@@ -65,9 +65,9 @@ function getJson()
     urlTransfer.setUrl(m.top.url)
     urlTransfer.SetMessagePort(port)
 
-    headers = config.headers
-    if headers <> Invalid
-        urlTransfer.SetHeaders(headers)
+    httpHeaders = config.httpHeaders
+    if httpHeaders <> Invalid
+        urlTransfer.SetHeaders(httpHeaders)
     end if
 
     secured = config <> Invalid AND config.secured
@@ -88,7 +88,7 @@ function getJson()
         while true
             msg = wait(100, port) ' wait for a message
             if type(msg) = "roUrlEvent" then
-                response = {}            
+                response = {}
                 responseCode = msg.GetResponseCode()
                 response.responseCode = responseCode
                 if responseCode < 0

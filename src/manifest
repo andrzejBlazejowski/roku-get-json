@@ -1,15 +1,7 @@
-dtitle=get-json
+title=ABD - getJson component
+subtitle=component allows to easily download json from web
 major_version=1
-minor_version=0
+minor_version=1
 build_version=00001
-
-mm_icon_focus_fhd=pkg:/images/channel-poster_fhd.png
-mm_icon_focus_hd=pkg:/images/channel-poster_hd.png
-mm_icon_focus_sd=pkg:/images/channel-poster_sd.png
-
-splash_screen_fhd=pkg:/images/splash-screen_fhd.jpg
-splash_screen_hd=pkg:/images/splash-screen_hd.jpg
-splash_screen_sd=pkg:/images/splash-screen_sd.jpg
-
-splash_color=#42576A
-splash_min_time=1
+sg_component_libs_provided=ABD
+hidden=1
