@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="getJson" extends="Task"> 
+	<interface>
+		<field id="url" type="string" />
+		<field id="config" type="assocArray" />
+		<field id="response" type="assocArray" />
+	</interface>
+	<script type="text/brightscript" uri="pkg:/components/getJson/getJson.brs" />
+
+</component>

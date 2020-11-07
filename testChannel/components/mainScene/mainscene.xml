@@ -2,6 +2,7 @@
 <component name="mainScene" extends="Scene"> 
 	<script type="text/brightscript" uri="pkg:/components/mainScene/mainScene.brs" />
 	<children>
+		<ComponentLibrary id="getJson" uri="pkg:/components/getJson.pkg" />
 		<Label id="label"
 			text="loream ipsum"
 			width="1280"
